@@ -10,7 +10,7 @@
 
 int create_text(Variable *variable)
 {
-     variable->font = sfFont_createFromFile("./assert/Menlo-BoldItalic.ttf");
+     variable->font = sfFont_createFromFile("./image/Menlo-BoldItalic.ttf");
     if (!variable->font)
         return 1;
     variable->introText = sfText_create();

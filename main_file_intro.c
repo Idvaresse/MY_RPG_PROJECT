@@ -25,11 +25,11 @@ void displaying(Variable *variable)
 
 int textures(Variable *variable)
 {
-    variable->bgTexture = sfTexture_createFromFile("./assert/map.jpeg", NULL);
-    variable->personnageTexture = sfTexture_createFromFile("./assert/personnage2.jpg", NULL);
-    variable->nextBtnTexture = sfTexture_createFromFile("./assert/fleche2.png", NULL);
-    variable->pauseBtnTexture = sfTexture_createFromFile("./assert/boutonpause.jpg", NULL);
-    variable->box_texture = sfTexture_createFromFile("./assert/box_dialog(1).png", NULL);
+    variable->bgTexture = sfTexture_createFromFile("./image/map.jpeg", NULL);
+    variable->personnageTexture = sfTexture_createFromFile("./image/personnage2.jpg", NULL);
+    variable->nextBtnTexture = sfTexture_createFromFile("./image/fleche2.png", NULL);
+    variable->pauseBtnTexture = sfTexture_createFromFile("./image/boutonpause.jpg", NULL);
+    variable->box_texture = sfTexture_createFromFile("./image/box_dialog(1).png", NULL);
     if (!variable->bgTexture || !variable->personnageTexture
     || !variable->nextBtnTexture || !variable->pauseBtnTexture) {
         return 1;
