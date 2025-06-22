@@ -5,53 +5,48 @@
 ** Principal file to build rpg game
 */
 
-#include "rpg.h"
-/*
-int main(void)
-{
-    sfVideoMode mode = {800, 600, 32};
-    sfRenderWindow *window;
-    //sfTexture *texture;
-    //sfSprite *sprite;
-    //sfMusic *music;
-    sfEvent event;
-
-    window = sfRenderWindow_create(mode, "SFML window", sfResize | sfClose, NULL);
-    //texture = sfTexture_createFromFile("asset/menu.jpg", NULL);
-    //sprite = sfSprite_create();
-    //sfSprite_setTexture(sprite, texture, sfTrue);
-    //music = sfMusic_createFromFile("nice_music.ogg");
-    //sfMusic_play(music);
-
-    while (sfRenderWindow_isOpen(window))
-    {
-        while (sfRenderWindow_pollEvent(window, &event))
-        {
-            /* Close window : exit */ /*
-            if (event.type == sfEvtClosed)
-                sfRenderWindow_close(window);
-        }
-        /* Clear the screen *//*
-        sfRenderWindow_clear(window, sfBlack);
-        /* Draw the sprite */
-        //sfRenderWindow_drawSprite(window, sprite, NULL);
-        /* Update the window *//*
-        sfRenderWindow_display(window);
-    }
-    //sfMusic_destroy(music);
-    //sfSprite_destroy(sprite);
-    //sfTexture_destroy(texture);
-    sfRenderWindow_destroy(window);
-    return 0;
-}
-*/
-
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
 
 #define MAP_WIDTH 23
 #define MAP_HEIGHT 23
+
+#include "rpg.h"
+/*
+int main(void)
+{
+    sfVideoMode mode = {800, 600, 32};
+    sfRenderWindow *window;
+    sfTexture *texture;
+    sfSprite *sprite;
+    sfMusic *music;
+    sfEvent event;
+
+    window = sfRenderWindow_create(mode, "SFML window", sfResize | sfClose, NULL);
+    texture = sfTexture_createFromFile("asset/menu.jpg", NULL);
+    sprite = sfSprite_create();
+    sfSprite_setTexture(sprite, texture, sfTrue);
+    music = sfMusic_createFromFile("nice_music.ogg");
+    sfMusic_play(music);
+
+    while (sfRenderWindow_isOpen(window))
+    {
+        while (sfRenderWindow_pollEvent(window, &event))
+        {
+            if (event.type == sfEvtClosed)
+                sfRenderWindow_close(window);
+        }
+        sfRenderWindow_clear(window, sfBlack);
+        sfRenderWindow_drawSprite(window, sprite, NULL);
+        sfRenderWindow_display(window);
+    }
+    sfMusic_destroy(music);
+    sfSprite_destroy(sprite);
+    sfTexture_destroy(texture);
+    sfRenderWindow_destroy(window);
+    return 0;
+}
 
 // Génère une carte avec un chemin horizontal et quelques arbres
 char **generate_map(void) {
@@ -115,5 +110,4 @@ int main(void) {
 
     return 0;
 }
-
-
+*/

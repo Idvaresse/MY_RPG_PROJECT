@@ -8,6 +8,10 @@
 NAME	=	my_rpg
 
 SRC	=	main.c	\
+		main_file_intro.c	\
+		sprite_intro.c	\
+		text_intro.c 	\
+		event.c	\
 
 CFLAGS	=	-W -Wall -Wextra -lm
 
